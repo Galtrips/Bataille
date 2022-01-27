@@ -176,6 +176,7 @@ void affiche_carte(int x) /* affiche une carte (valeur,couleur)*/
 	}
 }
 /*----------------------------------------------------------------*/
+
 void affiche(int jeu[],int taille,int n) /* affiche N cartes */
 {
 	if (n <= taille) {
@@ -189,7 +190,9 @@ void affiche(int jeu[],int taille,int n) /* affiche N cartes */
 	}
 	else cout << "il n'y a pas assez de cartes" << endl;
 }
-/*----------------------------------------------------------------*/
+/*-------------------9 83 108 32 122 108 106 118 117 107 32 116 108 122 122 104 110 108 32 107 98 32 106 111 104 117 117 
+108 115 32 108 122 97 32 115 104 32 106 115 108 109 32 99 108 121 122 32 115 104 32 122 98 112 97 108--------------------------------*/
+
 void distribution(int jeu[], int jeu1[], int jeu2[])
 	/* distribue les cartes aux deux joueurs */
 {
@@ -282,12 +285,12 @@ int main(){
 		
 		//remplissage du tableau jeu avec toutes les cartes
 		initjeu(jeu);
-		//mélange des cartes
+		//mÃ©lange des cartes
 		melange(jeu);
 		//distribution des cartes dans les tableaux jeu1 et jeu2
 		distribution(jeu, jeu1, jeu2);
 		
-		//affichage des deux jeux pour tester vos premières fonctions
+		//affichage des deux jeux pour tester vos premiÃ¨res fonctions
 		/*cout << "J1 : ";
 		affiche(jeu1, 32, 32);
 		cout << endl;
